@@ -1,38 +1,40 @@
+* {
+  /* text-align: center; */
+
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2a323c;
+}
+
+#root, .App {
+  height: 100%;
+}
+
 .App {
-  text-align: center;
+  position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.form-enter {
+  right: -1000px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form-enter-active {
+  right: 0;
+  transition: all 300ms ease-in;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.form-enter-done {
+  right: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.form-exit {
+  right: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-exit-active {
+  right: -1000px;
+  transition: all 300ms ease-in;
 }
