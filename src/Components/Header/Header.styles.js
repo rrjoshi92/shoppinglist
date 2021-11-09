@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 export const Wrapper = styled.header`
     position: relative;
-    width: 100%;
     height: 64px;
     left: 0px;
     top: 0px;
@@ -13,7 +12,6 @@ export const Wrapper = styled.header`
 
     .header_text {
         font-family: Dosis;
-        font-style: normal;
         font-weight: 600;
         font-size: 18px;
         line-height: 23px;
