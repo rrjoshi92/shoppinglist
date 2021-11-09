@@ -1,11 +1,9 @@
 import { Wrapper, Content } from './Home.styles'
 import Button from '../Button'
-function Home() {
+function Home({ toggleForm }) {
 
     const addItem = ()=>{
-        console.log('------------------------------------');
-        console.log('added!');
-        console.log('------------------------------------');
+        toggleForm(true);
     }
 
     return (
