@@ -9,6 +9,28 @@ export const Wrapper = styled.section`
     border: 1px solid #C6C6C6;
     min-height: 290px;
     text-align: center;
+
+    .form-enter {
+        right: -1000px;
+    }
+
+    .form-enter-active {
+        right: 0;
+        transition: all 300ms ease-in;
+    }
+
+    .form-enter-done {
+        right: 0;
+    }
+
+    .form-exit {
+        right: 0;
+    }
+
+    .form-exit-active {
+        right: -1000px;
+        transition: all 300ms ease-in;
+    }
 `
 
 export const Content = styled.div`

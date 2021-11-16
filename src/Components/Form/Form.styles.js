@@ -9,7 +9,7 @@ export const Wrapper = styled.div`
     position: fixed;
     background: white;
     overflow: scroll;
-
+    text-align: initial;
 `
 export const Content = styled.div`
     min-width: 560px;
@@ -69,6 +69,11 @@ export const Content = styled.div`
             display: flex;
             flex-flow: row-reverse;
             margin-bottom: 26px;
+        }
+
+        label {
+            color: #9CA8B4;
+            cursor: pointer;
         }
     }
 
