@@ -8,6 +8,9 @@ export const Spinner = styled.div`
     height: 76px;
     animation: spin 0.8s linear infinite;
     margin: 20px auto;
+    position: relative;
+    top:30%;
+
 
     @keyframes spin {
         0% {
