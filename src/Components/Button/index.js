@@ -1,10 +1,10 @@
 import { Wrapper } from './Button.styles'
 
-function Button({ text, clickHandler}) {
+function Button({ text, clickHandler, itemid}) {
 
     return (
         <Wrapper>
-            <button onClick={clickHandler}>{text}</button>
+            <button itemID={itemid} onClick={clickHandler}>{text}</button>
         </Wrapper>
     )
 }
